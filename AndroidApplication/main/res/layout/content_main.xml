@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bcd1e7"
+    android:baselineAligned="false"
+    android:gravity="center"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.capstone.vglove.vglovecapstone.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/mainbuttons"
+        android:layout_width="195dp"
+        android:layout_height="308dp"
+        android:layout_weight="0.08"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="0dp"
+            android:text="vGlove Capstone"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.089" />
+
+        <Button
+            android:id="@+id/pairButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:onClick="openPairing"
+            android:text="Pairing"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="74dp" />
+
+        <Button
+            android:id="@+id/recogButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:onClick="openRecognize"
+            android:text="Recognize Gesture"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="150dp" />
+
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:onClick="openRecord"
+            android:text="Record Gesture"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="231dp" />
+
+        <Button
+            android:id="@+id/devButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:onClick="openDev"
+            android:text="Dev Section"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="316dp" />
+    </LinearLayout>
+</LinearLayout>
